@@ -1,0 +1,189 @@
+/* 
+   Taller Rivera - Custom Styles
+   Paleta de Colores:
+   Rojo Óxido: #A8362A
+   Gris Metal: #4A4A4A
+   Negro Carbón: #1E1E1E
+   Blanco Hueso: #F2F0EB
+*/
+
+:root {
+    --red-oxide: #A8362A;
+    --red-oxide-hover: #8A2C22;
+    --metal-gray: #4A4A4A;
+    --carbon-black: #1E1E1E;
+    --bone-white: #F2F0EB;
+    
+    --font-title: 'Barlow Semi Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+}
+
+/* Base Styles & Typography */
+body {
+    font-family: var(--font-body);
+    color: var(--carbon-black);
+    background-color: #FAFAFA;
+}
+
+h1, h2, h3, h4, h5, h6, .font-title {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+}
+
+.logo-text {
+    font-family: var(--font-title);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--red-oxide) !important;
+}
+
+/* Text Utility Classes */
+.text-red { color: var(--red-oxide) !important; }
+.text-metal { color: var(--metal-gray) !important; }
+.text-carbon { color: var(--carbon-black) !important; }
+.text-bone { color: var(--bone-white) !important; }
+.bg-red { background-color: var(--red-oxide) !important; }
+.bg-bone { background-color: var(--bone-white) !important; }
+.bg-carbon { background-color: var(--carbon-black) !important; }
+
+/* Custom Buttons */
+.btn-primary {
+    background-color: var(--red-oxide);
+    border-color: var(--red-oxide);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--red-oxide-hover) !important;
+    border-color: var(--red-oxide-hover) !important;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--carbon-black);
+    border-bottom: 3px solid var(--red-oxide);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+}
+.nav-link {
+    color: var(--carbon-black) !important;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.nav-link:hover {
+    color: var(--red-oxide) !important;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(90deg, rgba(30,30,30,0.9) 0%, rgba(30,30,30,0.7) 100%), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+
+/* Rotating Gear Animation */
+.hero-gear-bg {
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    right: -100px;
+    color: rgba(242, 240, 235, 0.05); /* very faint bone white */
+    animation: rotateGear 40s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes rotateGear {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .hero-gear-bg {
+        animation: none;
+    }
+}
+
+/* Pain Section */
+.pain-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bone-white);
+}
+
+/* Services */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Estimator Section */
+.estimator-section {
+    background-color: var(--carbon-black);
+}
+.border-metal {
+    border-color: #d0d0d0;
+}
+.estimator-card {
+    border-radius: 12px;
+}
+
+/* Result Animation Reveal */
+.price-reveal-container {
+    overflow: hidden;
+    min-height: 60px;
+}
+
+.reveal-anim {
+    animation: slideUpFade 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* How it works */
+.step-number {
+    opacity: 0.3;
+}
+
+/* Footer Links */
+.footer-link:hover {
+    color: var(--bone-white) !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        text-align: center;
+    }
+    .hero .d-flex {
+        justify-content: center;
+    }
+    .hero-gear-bg {
+        width: 400px;
+        height: 400px;
+        top: -50px;
+        right: -100px;
+    }
+}

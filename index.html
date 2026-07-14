@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Rivera | Servicio Automotriz Transparente y Confiable en Chile</title>
+    <meta name="description" content="Taller mecánico automotriz en Chile. Especialistas en mantención, frenos y suspensión con total transparencia. Cotiza tu servicio en línea.">
+    
+    <!-- Favicon (Inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar py-2 text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-none d-md-block">
+                <small>Lunes a Viernes: 08:30 - 18:30 hrs</small>
+            </div>
+            <div>
+                <small class="fw-bold">📞 +56 9 1234 5678 | 📍 Av. Matta 1234, Santiago</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="#">TALLER RIVERA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cotizador">Cotizador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Cómo Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+                <a href="#cotizador" class="btn btn-primary ms-lg-3 mt-3 mt-lg-0 fw-bold">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero position-relative d-flex align-items-center overflow-hidden">
+        <!-- Background Gear Animation -->
+        <div class="hero-gear-bg position-absolute" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.73,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.49-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+            </svg>
+        </div>
+        
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white">
+                    <h1 class="display-4 text-uppercase mb-3">La mecánica no tiene por qué ser un misterio</h1>
+                    <p class="lead mb-4 fw-medium text-bone">Transparencia absoluta, precios justos y trabajo garantizado. El taller mecánico en el que por fin puedes confiar.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#cotizador" class="btn btn-primary btn-lg fw-bold">Calcula tu Servicio</a>
+                        <a href="#servicios" class="btn btn-outline-light btn-lg fw-bold">Ver Especialidades</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Proof -->
+    <section class="trust-proof py-4 bg-light border-bottom">
+        <div class="container text-center">
+            <p class="mb-3 fw-bold text-muted text-uppercase small">Especialistas multimarca</p>
+            <div class="d-flex justify-content-center flex-wrap gap-4 gap-md-5 opacity-75">
+                <span class="fs-5 fw-bold font-title text-metal">TOYOTA</span>
+                <span class="fs-5 fw-bold font-title text-metal">CHEVROLET</span>
+                <span class="fs-5 fw-bold font-title text-metal">HYUNDAI</span>
+                <span class="fs-5 fw-bold font-title text-metal">NISSAN</span>
+                <span class="fs-5 fw-bold font-title text-metal">KIA</span>
+                <span class="fs-5 fw-bold font-title text-metal">SUZUKI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Pain Section -->
+    <section class="pain-section py-5 my-md-4">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="text-carbon h1 mb-3">¿Cansado de los "extras" sorpresivos?</h2>
+                    <p class="fs-5 text-metal">Sabemos que ir al taller suele ser estresante. Que el presupuesto cambia de un día para otro, que te cambian piezas sin avisar. En <strong class="text-carbon">Taller Rivera</strong> cambiamos las reglas del juego.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="pain-icon-wrapper mb-3 mx-auto shadow-sm">
+                        <span class="fs-1">🔍</span>
+                    </div>
+                    <h3 class="h4 font-title text-carbon">Diagnóstico Claro</h3>
+                    <p class="text-muted">Te explicamos qué falla, por qué falla y te mostramos las piezas desgastadas. Sin lenguaje enredado.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="pain-icon-wrapper mb-3 mx-auto shadow-sm">
+                        <span class="fs-1">🛡️</span>
+                    </div>
+                    <h3 class="h4 font-title text-carbon">Sin Sorpresas</h3>
+                    <p class="text-muted">El presupuesto inicial es el que manda. Si encontramos algo extra, te consultamos antes de intervenir.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="pain-icon-wrapper mb-3 mx-auto shadow-sm">
+                        <span class="fs-1">✅</span>
+                    </div>
+                    <h3 class="h4 font-title text-carbon">Garantía Real</h3>
+                    <p class="text-muted">Trabajos respaldados y repuestos de calidad. Si algo falla producto de nuestro trabajo, respondemos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section id="servicios" class="services-section py-5 bg-bone">
+        <div class="container py-md-4">
+            <h2 class="text-center h1 text-carbon mb-5">Nuestros Servicios Estrella</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <img src="https://images.unsplash.com/photo-1632823469850-d4d4206e2365?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Mecánico realizando mantención por kilometraje" height="200">
+                        <div class="card-body p-4">
+                            <h3 class="h4 font-title text-red">Mantención por Kilometraje</h3>
+                            <p class="card-text text-muted">Afinamiento, cambio de aceite, filtros y revisión de fluidos según la pauta del fabricante de tu vehículo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <img src="https://images.unsplash.com/photo-1625047509168-a7006f8233f8?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Inspección de sistema de frenos" height="200">
+                        <div class="card-body p-4">
+                            <h3 class="h4 font-title text-red">Frenos y Seguridad</h3>
+                            <p class="card-text text-muted">Cambio de pastillas, rectificado de discos, balatas y cambio de líquido de frenos con sangrado profesional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Revisión de tren delantero y suspensión" height="200">
+                        <div class="card-body p-4">
+                            <h3 class="h4 font-title text-red">Suspensión y Dirección</h3>
+                            <p class="card-text text-muted">Amortiguadores, bandejas, terminales de dirección y bujes. Recupera la suavidad y estabilidad de tu conducción.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Estimator -->
+    <section id="cotizador" class="estimator-section py-5 text-white position-relative">
+        <div class="container py-md-5 z-1 position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 text-uppercase mb-3">Calcula tu presupuesto</h2>
+                    <p class="fs-5 text-bone mb-4">Usa nuestro cotizador online y obtén un valor de referencia al instante. Sin dejar tus datos ni esperar correos.</p>
+                    <ul class="list-unstyled text-bone fs-6">
+                        <li class="mb-2">✓ Valores basados en promedios de mercado</li>
+                        <li class="mb-2">✓ Incluye mano de obra referencial</li>
+                        <li class="mb-2">✓ Sin compromisos ni letra chica</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="card border-0 shadow-lg estimator-card bg-white p-4 p-md-5">
+                        <form id="calcForm" class="needs-validation" novalidate>
+                            <div class="mb-4">
+                                <label for="serviceType" class="form-label text-metal fw-bold">Tipo de Servicio</label>
+                                <select class="form-select form-select-lg shadow-none border-metal" id="serviceType" required aria-label="Selecciona tipo de servicio">
+                                    <option value="" selected disabled>Selecciona una opción...</option>
+                                    <option value="mantencion">Mantención Pauta (Filtros + Aceite)</option>
+                                    <option value="frenos">Cambio de Pastillas de Freno (Eje Delantero)</option>
+                                    <option value="suspension">Cambio de Amortiguadores (Eje Delantero)</option>
+                                    <option value="bateria">Cambio de Batería y Alternador</option>
+                                </select>
+                                <div class="invalid-feedback fw-medium">Por favor, selecciona un tipo de servicio.</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="carYear" class="form-label text-metal fw-bold">Año aproximado del vehículo</label>
+                                <select class="form-select form-select-lg shadow-none border-metal" id="carYear" required aria-label="Selecciona año del vehículo">
+                                    <option value="" selected disabled>Selecciona una opción...</option>
+                                    <option value="antiguo">Hasta 2010</option>
+                                    <option value="medio">2011 - 2018</option>
+                                    <option value="nuevo">2019 - Presente</option>
+                                </select>
+                                <div class="invalid-feedback fw-medium">Por favor, selecciona el rango de año de tu auto.</div>
+                            </div>
+
+                            <div id="formAlert" class="alert alert-danger d-none fw-medium" role="alert">
+                                Debes completar todos los campos para calcular el presupuesto.
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold fs-5 text-uppercase py-3">Calcular Valor Referencial</button>
+                        </form>
+
+                        <!-- Result Area (Hidden initially) -->
+                        <div id="resultArea" class="mt-4 text-center d-none" aria-live="polite">
+                            <hr class="border-secondary mb-4">
+                            <h4 class="text-metal font-title mb-2">Presupuesto Estimado</h4>
+                            <div class="price-reveal-container my-3">
+                                <span class="fs-1 fw-bold text-red" id="priceResult">$0</span>
+                            </div>
+                            <p class="small text-muted mb-0">* Valor referencial sujeto a revisión técnica en taller. Puede variar según marca y modelo exacto.</p>
+                            <a href="https://wa.me/56912345678" target="_blank" class="btn btn-outline-secondary mt-4 fw-bold w-100">Agendar Revisión Técnica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="nosotros" class="how-it-works py-5 bg-white">
+        <div class="container py-md-4">
+            <h2 class="text-center h1 text-carbon mb-5">Cómo Trabajamos</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="step-number text-red font-title display-3 fw-bold mb-3">1</div>
+                    <h4 class="h5 font-title text-carbon">Reserva o Visita</h4>
+                    <p class="text-muted small">Agenda tu hora por WhatsApp o ven directamente a nuestro taller.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-number text-red font-title display-3 fw-bold mb-3">2</div>
+                    <h4 class="h5 font-title text-carbon">Inspección</h4>
+                    <p class="text-muted small">Revisamos tu vehículo a fondo y documentamos cualquier hallazgo.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-number text-red font-title display-3 fw-bold mb-3">3</div>
+                    <h4 class="h5 font-title text-carbon">Presupuesto</h4>
+                    <p class="text-muted small">Te enviamos el detalle exacto. No movemos una tuerca sin tu OK.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-number text-red font-title display-3 fw-bold mb-3">4</div>
+                    <h4 class="h5 font-title text-carbon">Entrega</h4>
+                    <p class="text-muted small">Te entregamos tu auto listo, lavado y con los repuestos viejos en el maletero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container py-md-4">
+            <h2 class="text-center h1 text-carbon mb-5">Lo que dicen nuestros clientes</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="d-flex text-warning mb-3">
+                            ★★★★★
+                        </div>
+                        <p class="fst-italic text-metal mb-4">"Llevé mi auto por un ruido en los frenos. En otro lado me cobraban cambio de discos. Acá me mostraron que solo era limpieza y ajuste. Ganaron un cliente para siempre."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="avatar bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 48px; height: 48px;">
+                                MM
+                            </div>
+                            <div>
+                                <h5 class="h6 mb-0 font-title text-carbon">Matías Muñoz</h5>
+                                <small class="text-muted">Propietario Hyundai Tucson</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="d-flex text-warning mb-3">
+                            ★★★★★
+                        </div>
+                        <p class="fst-italic text-metal mb-4">"El cotizador de la web es súper útil para hacerse una idea. Fui con temor porque no sé de autos, pero me explicaron todo con peras y manzanas. Excelente servicio."</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="avatar bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 48px; height: 48px;">
+                                CP
+                            </div>
+                            <div>
+                                <h5 class="h6 mb-0 font-title text-carbon">Camila Pérez</h5>
+                                <small class="text-muted">Propietaria Chevrolet Spark</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section py-5 bg-bone">
+        <div class="container py-md-4">
+            <h2 class="text-center h1 text-carbon mb-5">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="accordionFAQ">
+                        <div class="accordion-item border-0 border-bottom">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button font-title fw-bold text-carbon bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    ¿Qué marcas de vehículos atienden?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-metal">
+                                    Somos un taller multimarca. Tenemos escáner y herramientas especializadas para la gran mayoría de marcas del parque automotriz chileno, incluyendo marcas asiáticas, americanas y europeas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 border-bottom">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed font-title fw-bold text-carbon bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    ¿Puedo llevar mis propios repuestos?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-metal">
+                                    Sí, aceptamos que traigas tus repuestos. Sin embargo, en esos casos nuestra garantía solo cubrirá la mano de obra, ya que no podemos respaldar la calidad o el origen de la pieza adquirida externamente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed font-title fw-bold text-carbon bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    ¿Cuáles son las formas de pago?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-metal">
+                                    Aceptamos efectivo, transferencia bancaria y todas las tarjetas de crédito o débito (Webpay). También ofrecemos pago en cuotas con tarjeta de crédito.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-center text-white bg-red">
+        <div class="container py-md-4">
+            <h2 class="display-6 font-title mb-3">¿Tu auto necesita revisión?</h2>
+            <p class="lead mb-4 fw-medium text-bone">No esperes a que una falla pequeña se convierta en un problema caro.</p>
+            <a href="https://wa.me/56912345678" target="_blank" class="btn btn-dark btn-lg fw-bold px-5 py-3">Agendar Hora por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-carbon text-bone py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="h4 font-title text-white text-decoration-none mb-3 d-inline-block logo-text" href="#">TALLER RIVERA</a>
+                    <p class="text-secondary small pe-lg-4">Transparencia, confianza y calidad. Cambiamos la forma de hacer mecánica automotriz en Santiago.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white font-title mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-secondary text-decoration-none footer-link">Servicios</a></li>
+                        <li class="mb-2"><a href="#cotizador" class="text-secondary text-decoration-none footer-link">Cotizador</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-secondary text-decoration-none footer-link">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <h5 class="text-white font-title mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-secondary small">
+                        <li class="mb-2">📍 Av. Manuel Antonio Matta 1234, Santiago Centro, Región Metropolitana</li>
+                        <li class="mb-2">📞 +56 9 1234 5678</li>
+                        <li class="mb-2">✉️ contacto@tallerrivera.cl</li>
+                        <li class="mb-2 mt-3 text-white">Horario: Lun - Vie de 08:30 a 18:30 hrs.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-5 mb-4">
+            <div class="text-center text-secondary small">
+                &copy; 2026 Taller Rivera. Todos los derechos reservados. Sitio ficticio de demostración.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
